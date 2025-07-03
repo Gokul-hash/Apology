@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apology Request</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="centered">
+    <h2>Do you give me apology?</h2>
+    <button onclick="window.location.href='love.html'">Yes</button>
+    <button id="noBtn" onmouseover="moveButton()">No</button>
+  </div>
+
+  <script>
+    function moveButton() {
+      const btn = document.getElementById('noBtn');
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      btn.style.position = 'absolute';
+      btn.style.left = `${x}px`;
+      btn.style.top = `${y}px`;
+    }
+  </script>
+</body>
+</html>
